@@ -28,6 +28,8 @@ void loop() {
     if (radio.available()) {
         char text[32] = "";
         radio.read(&text, sizeof(text));
-        Serial.println(text);
+        if(text[0] != '\0'){
+            Serial.println(text);
+        }
     }
 }

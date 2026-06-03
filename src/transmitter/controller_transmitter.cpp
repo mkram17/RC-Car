@@ -16,6 +16,7 @@ void setup(){
     pinMode(VCC_PIN, OUTPUT);
     digitalWrite(VCC_PIN, HIGH);
 
+    Serial.begin(9600);
     radio.begin();
     radio.openWritingPipe(address);
     radio.setPALevel(RF24_PA_MIN);
@@ -25,5 +26,6 @@ void setup(){
 void loop() {
     const char text[] = "Testing MK";
     radio.write(&text, sizeof(text));
+    Serial.println(text);
     delay(1000);
 }
