@@ -1,9 +1,10 @@
-# RC Car — Receiver
+# RC Car
 
-This directory contains the firmware and documentation for the RC car receiver module.
+This directory contains the firmware and documentation for the RC car I made during the summer of 2026. It took me ~3 weeks, and gave me experience with electrical circuits, arduino, C++, and CAD/3D printing. I also learned how to use RF transceivers, a multimeter, potentiometers, a L298N motor controller, Arduino Nano/Nano Every, and Fusion.
+
 ## Overview
 
-The receiver reads radio (or other transport) commands and translates them into motor and steering outputs. It's implemented for an embedded board using PlatformIO.
+The transmitter sends info about joystick position. The receiver reads radio commands and translates them into motor and steering outputs.
 
 ## Hardware
 
